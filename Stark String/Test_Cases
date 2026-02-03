@@ -1,0 +1,60 @@
+Test Case 1 — Basic Example
+Input
+A = "abcdef"
+B = "ghijklmnopqrst"
+Output
+agbhcjdlenfpqrst
+________________________________________
+Test Case 2 — Small Strings
+Input
+A = "ab"
+B = "wxyz"
+Process
+•	A[0] → a
+•	B[0] → w
+•	A[1] → b
+•	B[1] → x
+Remaining B → yz
+Output
+awbxyz
+________________________________________
+Test Case 3 — Minimum Size A
+Input
+A = "a"
+B = "bcdef"
+Output
+abcdef
+________________________________________
+Test Case 4 — B Index Skips Fast
+Input
+A = "abcd"
+B = "mnopqrstuv"
+B Indices Pattern
+•	0
+•	1
+•	3
+•	5
+Output
+ambncpdfrstuv
+________________________________________
+Test Case 5 — A Almost Reaches Limit
+Input
+A = "xyz"
+B = "abcdefghijkl"
+Output
+xaybzdcfghijkl
+________________________________________
+Test Case 6 — Repeated Characters
+Input
+A = "aaa"
+B = "bbbbbbbb"
+Output
+abababbbbb
+________________________________________
+⭐ Optional Hidden Edge Test (For Platforms)
+Input
+A = "mnopq"
+B = "abcdefghijklmnopqrstuvwxyz"
+Checks:
+•	Correct B index calculation
+•	Proper leftover B append
