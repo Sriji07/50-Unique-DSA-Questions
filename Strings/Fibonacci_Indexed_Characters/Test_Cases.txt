@@ -1,0 +1,144 @@
+Test Case 1 — 
+Input:
+abcdefghi
+
+Output:
+abbcdfi
+
+Test Case 2 
+Input:
+helloworld
+
+Output:
+heellwrl
+
+✅ Minimum Size Edge Cases
+Test Case 3 — Single Character
+Input:
+a
+
+Output:
+a
+
+Test Case 4 — Two Characters
+Input:
+ab
+
+Output:
+abb
+
+
+(Fibonacci → 0, 1, 1)
+
+✅ Small Length Boundary
+Test Case 5 — Length = 3
+Input:
+abc
+
+Output:
+abbc
+
+
+(Fib → 0, 1, 1, 2)
+
+Test Case 6 — Length = 4
+Input:
+abcd
+
+Output:
+abbcd
+
+✅ Duplicate Fibonacci Index Handling
+Test Case 7 — Ensure Duplicate Index 1 is Counted
+Input:
+xyz
+
+Output:
+xyyz
+
+✅ All Same Characters
+Test Case 8 — Repeated Letters
+Input:
+aaaaaaa
+
+Output:
+aaaaaa
+
+✅ Large Input Edge Case
+Test Case 9 — Max Constraint Size
+Input:
+String of length 100000 (all 'a')
+
+Expected:
+Valid output without timeout or crash
+
+
+Purpose:
+Performance test
+Memory handling
+
+✅ Fibonacci Boundary Crossing
+Test Case 10 — Fibonacci Stops Exactly At End
+Input:
+abcdefgh
+
+Output:
+abbcdfh
+
+
+Fib → 0,1,1,2,3,5
+
+
+Test Case 11 — Fibonacci Exceeds Near End
+Input:
+abcdefg
+
+Output:
+abbcdf
+
+
+Fib → 0,1,1,2,3,5
+Next = 8 (stop)
+
+
+✅ Random String
+Test Case 12
+Input:
+qwertyuiop
+
+Output:
+qwwertui
+
+
+✅ Palindrome String
+Test Case 13
+Input:
+racecar
+
+Output:
+raacecr
+
+
+✅ Alternating Characters
+Test Case 14
+Input:
+ababababab
+
+Output:
+abbaabbab
+
+
+⭐ 
+Hidden Case 1 — All Same Except Last
+Input:
+aaaaaab
+
+Output:
+aaaaaa
+
+Hidden Case 2 — Increasing Alphabet
+Input:
+abcdefghijklmnopqrstuvwxyz
+
+Output:
+abbcdfinvy
